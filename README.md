@@ -1,9 +1,12 @@
 ## Contributing
 
+### Preamble 
+We encourage all developers to make mistakes in the beginning. This document is meant to create harmonious and continuous development across all teams. When something does not make sense please do not ever hesitate to ask or get clarification. We are first and foremost a team. Please feel free to make reccomendations on changes to the process . 
+
 The Direct Team will have a strict set of guidelines for how we check in code. This ensures that we have high quality code delivered on a continuous basis.
 #### Submitting a Pull Request (PR)
 
-All code submitted for Direct must go through a pull request and no direct changes are allowed on master. This is a peer reviewed cycle which allows us to maintain a high level of quality in our code.
+All code submitted for Direct must go through a pull request and no direct changes are allowed on developer or master. This is a peer reviewed cycle which allows us to maintain a high level of quality in our code.
 Before you submit your Pull Request (PR) you must abide by the following guidelines:
 * Work must be done on a local branch associated with the user name and work item number done either through Visual Studio or via the command prompt:
 ```
@@ -16,7 +19,7 @@ git checkout -b my-fix-branch master
 git commit -a
 ```
 Note: the optional commit -a command line option will automatically “add” and “rm” edited files.
-* Push your branch to VSTS either through Visual Studio or via the command prompt:
+* Push your branch to Dev Ops either through Visual Studio or via the command prompt:
 ```
 git push origin my-fix-branch
 ```
@@ -62,11 +65,12 @@ Each commit message consists of a **header**, a **body** and a **footer**. The h
 <BLANK LINE>
 <footer>
 ```
-The  ######  header is mandatory and the  ###### scope of the header is optional.
+The  **header** is mandatory and the  **scope** of the **header** is optional.
 Any line of the commit message cannot be longer 100 characters! This allows the message to be easier to read on Visual Studio Online as well as in various git tools.
  ##### Reverting a Commit
 If the commit reverts a previous commit, it should begin with revert:, followed by the header of the reverted commit. In the body it should say: This reverts commit <hash>., where the hash is the SHA of the commit being reverted.
- ##### Type
+ 
+ #### Type
 
 Must be one of the following:
 * **feat**: A new feature
